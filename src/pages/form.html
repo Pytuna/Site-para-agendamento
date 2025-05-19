@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>Crie seu evento</title>
+    <link rel="shortcut icon" href="/Primeira-Avaliacao/src/assets/agendar.png" />
+    <!--CSS-->
+    <link rel="stylesheet" href="/Primeira-Avaliacao/src/css/form.css" />
+    <!--Fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body id="body">
+    <header>
+      <div class="page">
+        <h1 class="titulo">Crie e compartilhe seu evento.</h1>
+        <p class="subtitulo">O primeiro passo é preenchendo este formulário</p>
+      </div>
+    </header>
+    <main>
+      <form id="form" action="/Primeira-Avaliacao/src/actions/form.php" method="GET">
+        <fieldset>
+          <legend>Informações do evento</legend>
+          <div class="col-1">
+            <div class="input">
+              <label for="titulo_evento"> Título do evento </label>
+              <input
+                name="titulo"
+                type="text"
+                id="titulo_evento"
+                placeholder="Ir à oficína de bolo..."
+                required
+              />
+            </div>
+            <div class="input">
+              <label for="local_evento">
+                Local do evento <span>(mínimo 8 caracteres)</span>
+              </label>
+              <input
+                name="local"
+                type="text"
+                id="local_evento"
+                minlength="8"
+                placeholder="Doceria dona Chiquinha"
+              />
+            </div>
+            <div class="input">
+              <label for="link_evento">
+                Link do evento <span>(comece com https://)</span>
+              </label>
+              <input
+                name="link"
+                type="url"
+                id="link_evento"
+                placeholder="https://doceria-paladar.com.br"
+              />
+            </div>
+            <div class="input">
+              <label for="numero_evento">
+                Número para contato <span>(somente número)</span>
+              </label>
+              <input
+                name="numero"
+                type="number"
+                id="numero_evento"
+                minlength="9"
+                placeholder="(00) 00000-0000"
+              />
+            </div>
+            <div class="input">
+              <label for="descricao_evento">
+                Descrição do evento <span>(Informações extras)</span>
+              </label>
+              <textarea
+                name="descricao"
+                class="texto"
+                id="descricao_evento"
+                placeholder="Necessito disso, há tempos não vou lá"
+              ></textarea>
+            </div>
+            <div class="input">
+              <label for="tipo_evento"> Categoria </label>
+              <select name="opcao" id="tipo_evento">
+                <option value="urgente">Urgente</option>
+                <option value="importante">Importante</option>
+                <option value="normal">Normal</option>
+              </select>
+            </div>
+            <div class="checkbox">
+              <input name="checkbox" type="checkbox" id="privacidade_evento" />
+              <label for="privacidade_evento">
+                Deseja que a nota seja privada?
+              </label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="fieldset_container">
+            <legend>Dia e hora</legend>
+          </div>
+          <div class="col-2">
+            <div class="input">
+              <label for="dia_evento"> Data </label>
+              <input name="data" type="date" class="dia_evento" />
+            </div>
+            <div class="input">
+              <label for="comeco_evento"> Das </label>
+              <input name="inicio" type="time" class="comeco_evento" />
+            </div>
+            <div class="input">
+              <label for="fim_evento"> Até </label>
+              <input name="fim" type="time" class="fim_evento" />
+            </div>
+          </div>
+        </fieldset>
+      </form>
+      <footer>
+        <input class="botao" type="submit" form="form" value="Salvar evento" />
+      </footer>
+    </main>
+  </body>
+</html>

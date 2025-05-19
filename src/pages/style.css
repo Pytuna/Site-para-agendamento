@@ -1,0 +1,343 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-color: #faf5f0;
+  display: flex;
+  flex-direction: column;
+}
+nav ul {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  gap: 100px;
+  padding-right: 50px;
+}
+nav ul li {
+  list-style: none;
+  transition: transform 100ms linear, opacity 200ms ease-in-out;
+}
+nav ul li a{
+  text-decoration: none;
+  color: inherit;
+  font-style: normal;
+}
+nav ul li:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+  text-decoration: underline;
+  transition: 0.1s;
+}
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.esquerda {
+  width: 35%;
+  height: 498;
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px #3c3a2d dashed;
+}
+.caixa_um {
+  display: flex;
+  flex-direction: column;
+}
+.caixa_um p {
+  color: #3c3a2d;
+  font-size: 18;
+  font-weight: bold;
+}
+.caixa_um .quadrado {
+  margin-top: 12px;
+  width: 296px;
+  height: 229px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: transform 100ms linear, opacity 200ms ease-in-out;
+}
+.caixa_um .quadrado:hover {
+  transform: scale(1.08);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.caixa_um .quadrado .circulo {
+  width: 64px;
+  height: 64px;
+  opacity: 100%;
+  border-radius: 100%;
+  background-color: #addaff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.caixa_um .quadrado .assets {
+  font-size: 30px;
+}
+.caixa_um .quadrado .p_titulo {
+  color: #3c3a2d;
+  font-size: 18;
+  font-weight: bold;
+}
+.caixa_um .quadrado .s_titulo {
+  color: #687382;
+  font-size: 18;
+  font-weight: normal;
+}
+.caixa_dois {
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+}
+.caixa_dois p {
+  color: #3c3a2d;
+  font-size: 18;
+  font-weight: bold;
+}
+.caixa_dois .quadrado {
+  margin-top: 12px;
+  width: 296px;
+  height: 112px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  padding-left: 25px;
+  gap: 10px;
+  transition: transform 100ms linear, opacity 200ms ease-in-out;
+}
+.caixa_dois .quadrado:hover {
+  transform: scale(1.08);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.caixa_dois .quadrado .circulo {
+  width: 64px;
+  height: 64px;
+  opacity: 100%;
+  border-radius: 100%;
+  background-color: #ffeb80;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.caixa_dois .quadrado .assets {
+  font-size: 30px;
+}
+.caixa_dois .quadrado .texto {
+  display: flex;
+  flex-direction: column;
+}
+.caixa_dois .quadrado .p_titulo {
+  color: #3c3a2d;
+  font-size: 18;
+  font-weight: bold;
+}
+.caixa_dois .quadrado .s_titulo {
+  color: #687382;
+  font-size: 18;
+  font-weight: normal;
+}
+.caixa_tres {
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+}
+.caixa_tres p {
+  color: #3c3a2d;
+  font-size: 18;
+  font-weight: bold;
+}
+.caixa_tres .quadrado {
+  margin-top: 12px;
+  width: 296px;
+  height: 112px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  padding-left: 25px;
+  gap: 10px;
+  transition: transform 100ms linear, opacity 200ms ease-in-out;
+}
+.caixa_tres .quadrado:hover {
+  transform: scale(1.08);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.caixa_tres .quadrado .circulo {
+  width: 64px;
+  height: 64px;
+  opacity: 100%;
+  border-radius: 100%;
+  background-color: #cec5ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.caixa_tres .quadrado .assets {
+  font-size: 30px;
+}
+.caixa_tres .quadrado .texto {
+  display: flex;
+  flex-direction: column;
+}
+.caixa_tres .quadrado .p_titulo {
+  color: #3c3a2d;
+  font-size: 18;
+  font-weight: bold;
+}
+.caixa_tres .quadrado .s_titulo {
+  color: #687382;
+  font-size: 18;
+  font-weight: normal;
+}
+.direita {
+  width: 100%;
+  height: 498;
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-evenly;
+}
+.titulo {
+  font-size: 75px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+.paragrafo {
+  color: #687382;
+  font-size: 18;
+  font-weight: normal;
+  text-align: center;
+}
+.direita button {
+  background-color: #3c3a2d;
+  width: 35%;
+  height: 75px;
+  border-radius: 20px;
+  border-style: none;
+  box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 100ms linear, opacity 200ms ease-in-out;
+}
+.direita a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: none;
+  outline-style: none;
+}
+.direita button:hover {
+  transform: scale(1.08);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/*reponsivo*/
+
+@media (max-width: 1024px) {
+  body {
+    padding: 25px;
+  }
+  nav ul {
+    gap: 50px;
+    padding-right: 30px;
+  }
+
+  .titulo {
+    font-size: 60px;
+  }
+
+  .direita button {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 25px;
+  }
+  main {
+    flex-direction: column;
+  }
+
+  .esquerda {
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px #3c3a2d dashed;
+    padding-bottom: 20px;
+  }
+
+  .direita {
+    height: auto;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .titulo {
+    font-size: 48px;
+  }
+
+  .direita button {
+    width: 60%;
+    height: 60px;
+  }
+
+  nav ul {
+    justify-content: center;
+    gap: 30px;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 25px;
+  }
+  nav ul {
+    gap: 20px;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 15px;
+  }
+
+  .titulo {
+    font-size: 36px;
+  }
+
+  .caixa_um .quadrado,
+  .caixa_dois .quadrado,
+  .caixa_tres .quadrado {
+    width: 260px;
+  }
+
+  .direita button {
+    width: 80%;
+  }
+}
